@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="200" height="150" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 150">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <clipPath id="clippath">
+      <rect x="52.759" y="39.46" width="94.483" height="71.086" fill="none"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clippath)">
+    <g>
+      <g>
+        <line x1="66.109" y1="-6.491" x2="111.407" y2="225.221" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+        <line x1="66.109" y1="-6.47" x2="93.012" y2="224.854" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+        <line x1="66.118" y1="-6.483" x2="77.782" y2="224.854" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+        <line x1="66.118" y1="-6.5" x2="61.885" y2="224.521" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+        <line x1="66.118" y1="-6.47" x2="42.859" y2="224.78" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+        <line x1="66.114" y1="-6.496" x2="26.946" y2="224.78" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+        <line x1="66.079" y1="-6.47" x2="12.256" y2="225.221" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.02"/>
+      </g>
+      <g>
+        <line x1="-10.45" y1="59.523" x2="366.862" y2="29.815" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+        <line x1="-10.419" y1="59.523" x2="366.261" y2="41.881" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+        <line x1="-10.432" y1="59.519" x2="366.261" y2="51.867" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+        <line x1="-10.463" y1="59.519" x2="365.721" y2="62.294" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+        <line x1="-10.419" y1="59.519" x2="366.14" y2="74.771" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+        <line x1="-10.458" y1="59.519" x2="366.14" y2="85.207" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+        <line x1="-10.419" y1="59.541" x2="366.862" y2="94.844" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.055"/>
+      </g>
+    </g>
+  </g>
+</svg>

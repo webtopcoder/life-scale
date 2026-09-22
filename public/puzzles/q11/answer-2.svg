@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="200" height="150" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 150">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <clipPath id="clippath">
+      <rect x="62.405" y="46.717" width="75.189" height="56.566" fill="none"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clippath)">
+    <g>
+      <g>
+        <line x1="347.749" y1="98.384" x2="-58.292" y2="98.384" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2.551"/>
+        <line x1="347.749" y1="75.98" x2="-58.292" y2="75.98" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="5.103"/>
+        <line x1="347.749" y1="53.575" x2="-58.292" y2="53.575" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="6.378"/>
+      </g>
+      <g>
+        <line x1="49.94" y1="-158.062" x2="49.94" y2="155.602" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="2.242"/>
+        <line x1="27.535" y1="-158.062" x2="27.535" y2="155.602" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="4.485"/>
+        <line x1="5.13" y1="-158.062" x2="5.13" y2="155.602" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="5.606"/>
+      </g>
+    </g>
+  </g>
+</svg>

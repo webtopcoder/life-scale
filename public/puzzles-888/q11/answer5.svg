@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 112">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="160" height="112"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-1" x="-253.97" y="-414.71" width="416.87" height="541.8"/>
+  <g class="cls-4">
+    <g>
+      <g>
+        <line class="cls-3" x1="4.66" y1="130.4" x2="4.66" y2="-31.89"/>
+        <line class="cls-3" x1="34.8" y1="130.4" x2="34.8" y2="-31.89"/>
+        <line class="cls-3" x1="64.93" y1="130.4" x2="64.93" y2="-31.89"/>
+        <line class="cls-3" x1="95.07" y1="130.4" x2="95.07" y2="-31.89"/>
+        <line class="cls-3" x1="125.2" y1="130.4" x2="125.2" y2="-31.89"/>
+        <line class="cls-3" x1="155.34" y1="130.4" x2="155.34" y2="-31.89"/>
+      </g>
+      <g>
+        <line class="cls-3" x1="202.04" y1="104.75" x2="-42.04" y2="104.75"/>
+        <line class="cls-3" x1="202.04" y1="72.03" x2="-42.04" y2="72.03"/>
+        <line class="cls-3" x1="202.04" y1="39.31" x2="-42.04" y2="39.31"/>
+        <line class="cls-3" x1="202.04" y1="6.58" x2="-42.04" y2="6.58"/>
+      </g>
+    </g>
+  </g>
+</svg>

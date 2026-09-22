@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="800" height="600" version="1.1" viewBox="0 0 800 600">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <g>
+    <line x1="193.138" y1="77.131" x2="279.347" y2="518.113" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="193.138" y1="77.164" x2="244.339" y2="517.414" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="193.155" y1="77.148" x2="215.353" y2="517.414" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="193.155" y1="77.115" x2="185.1" y2="516.781" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="193.155" y1="77.164" x2="148.89" y2="517.274" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="193.155" y1="77.123" x2="118.605" y2="517.274" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="193.081" y1="77.164" x2="90.655" y2="518.113" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <ellipse cx="191.394" cy="83.228" rx="18.693" ry="18.158" fill="#222221"/>
+  </g>
+  <g>
+    <line x1="47.436" y1="409.468" x2="765.515" y2="352.928" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.494" y1="409.468" x2="764.371" y2="375.891" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.469" y1="409.46" x2="764.371" y2="394.905" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.411" y1="409.46" x2="763.343" y2="414.742" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.494" y1="409.46" x2="764.149" y2="438.495" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.42" y1="409.46" x2="764.149" y2="458.357" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.494" y1="409.509" x2="765.515" y2="476.688" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+  </g>
+  <g>
+    <line x1="607.808" y1="77.131" x2="694.017" y2="518.113" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="607.808" y1="77.164" x2="659.009" y2="517.414" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="607.825" y1="77.148" x2="630.023" y2="517.414" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="607.825" y1="77.115" x2="599.77" y2="516.781" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="607.825" y1="77.164" x2="563.561" y2="517.274" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="607.825" y1="77.123" x2="533.275" y2="517.274" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <line x1="607.751" y1="77.164" x2="505.326" y2="518.113" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="1.942"/>
+    <ellipse cx="606.064" cy="83.228" rx="18.693" ry="18.158" fill="#222221"/>
+  </g>
+  <ellipse cx="51.492" cy="410.933" rx="18.693" ry="18.158" fill="#222221"/>
+  <g>
+    <line x1="47.436" y1="202.767" x2="765.515" y2="146.227" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.494" y1="202.767" x2="764.371" y2="169.182" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.469" y1="202.758" x2="764.371" y2="188.196" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.411" y1="202.758" x2="763.343" y2="208.041" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.494" y1="202.758" x2="764.149" y2="231.785" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.42" y1="202.758" x2="764.149" y2="251.647" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+    <line x1="47.494" y1="202.8" x2="765.515" y2="269.986" fill="none" stroke="#222221" stroke-miterlimit="10" stroke-width="2.008"/>
+  </g>
+  <ellipse cx="51.492" cy="204.231" rx="18.693" ry="18.158" fill="#222221"/>
+  <rect x="508.88" y="348.601" width="179.814" height="135.286" fill="#fff"/>
+  <g>
+    <path d="M692.948,486.816h-187.391v-140.914h187.391v140.914ZM510.83,481.55h176.86v-130.383h-176.86v130.383Z" fill="#389951"/>
+    <path d="M608.557,434.859h-24.617v-2.46c0-4.188.477-7.594,1.423-10.202.946-2.616,2.361-5.002,4.245-7.158,1.876-2.156,6.097-5.957,12.662-11.403,3.497-2.847,5.249-5.463,5.249-7.841s-.699-4.221-2.106-5.537-3.53-1.975-6.385-1.975c-3.069,0-5.603,1.012-7.611,3.044s-3.291,5.57-3.859,10.622l-25.135-3.11c.864-9.24,4.221-16.686,10.071-22.321,5.85-5.636,14.826-8.458,26.921-8.458,9.412,0,17.015,1.966,22.807,5.899,7.857,5.315,11.79,12.399,11.79,21.252,0,3.669-1.012,7.216-3.044,10.622-2.032,3.414-6.179,7.578-12.44,12.506-4.361,3.456-7.117,6.228-8.26,8.326-1.144,2.098-1.72,4.83-1.72,8.195h.008ZM583.101,441.408h26.369v23.259h-26.369v-23.259Z" fill="#389951"/>
+  </g>
+</svg>

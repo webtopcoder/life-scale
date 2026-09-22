@@ -1,0 +1,509 @@
+generator client {
+  provider      = "prisma-client"
+  output        = "../src/generated/prisma"
+  moduleFormat  = "cjs"
+  compilerBuild = "small"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum BrainTeaserFormat {
+  riddle
+  lateral_thinking
+  word_puzzle
+  logic_trap
+  visual_illusion
+}
+
+enum ContentCategory {
+  logic
+  pattern
+  spatial
+  speed
+  memory
+  verbal
+  self
+  general
+}
+
+enum ContentType {
+  brain_teaser
+  puzzle
+  lesson
+}
+
+enum ProgressStatus {
+  not_started
+  in_progress
+  completed
+}
+
+enum PuzzleFormat {
+  odd_one_out
+  spatial_rotation
+  path_trace
+  matrix_pattern
+  sequence_completion
+}
+
+model Achievement {
+  id             String   @id @default(uuid()) @db.Uuid
+  branch         String   @default("iq")
+  conditionJson  Json     @default("{}") @map("condition_json")
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  description    String?
+  icon           String   @default("trophy")
+  name           String
+  xpReward       Int      @default(0) @map("xp_reward")
+  userAchievements UserAchievement[]
+
+  @@map("achievements")
+}
+
+model AffiliateApplication {
+  id            String   @id @default(uuid()) @db.Uuid
+  businessName  String   @map("business_name")
+  comment       String?
+  createdAt     DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  email         String
+  fullName      String   @map("full_name")
+  trafficSource String   @map("traffic_source")
+  websiteUrl    String?  @map("website_url")
+
+  @@map("affiliate_applications")
+}
+
+model AssessmentSession {
+  id                 String              @id @default(uuid()) @db.Uuid
+  adaptiveAbility    Decimal?            @map("adaptive_ability") @db.Decimal
+  completedAt        DateTime?           @map("completed_at") @db.Timestamptz(6)
+  completionTimeMs   Int?                @map("completion_time_ms")
+  createdAt          DateTime            @default(now()) @map("created_at") @db.Timestamptz(6)
+  email              String?
+  finalScore         Int?                @map("final_score")
+  gender             String?
+  isV2               Boolean             @default(false) @map("is_v2")
+  percentiles        Json?
+  scores             Json?
+  secondaryCategory  String?             @map("secondary_category")
+  sessionId          String              @unique @map("session_id")
+  startedAt          DateTime            @default(now()) @map("started_at") @db.Timestamptz(6)
+  strongestCategory  String?             @map("strongest_category")
+  trajectory         String?
+  answers            AssessmentAnswer[]
+  userProfiles       UserProfile[]
+
+  @@map("assessment_sessions")
+}
+
+model AssessmentAnswer {
+  id             String            @id @default(uuid()) @db.Uuid
+  createdAt      DateTime          @default(now()) @map("created_at") @db.Timestamptz(6)
+  isCorrect      Boolean?          @map("is_correct")
+  questionId     Int               @map("question_id")
+  selectedOption Int               @map("selected_option")
+  sessionId      String            @map("session_id")
+  timeSpentMs    Int               @map("time_spent_ms")
+  session        AssessmentSession @relation(fields: [sessionId], references: [sessionId], onDelete: Cascade)
+
+  @@index([sessionId])
+  @@map("assessment_answers")
+}
+
+model BhDailyLog {
+  id               String   @id @default(uuid()) @db.Uuid
+  createdAt        DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  focus            Int?
+  hydration        Boolean?
+  logDate          DateTime @map("log_date") @db.Date
+  mood             Int?
+  movementMinutes  Int?     @map("movement_minutes")
+  sleepHours       Decimal? @map("sleep_hours") @db.Decimal
+  updatedAt        DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+  userId           String   @map("user_id")
+
+  @@unique([userId, logDate])
+  @@map("bh_daily_logs")
+}
+
+model BrainTeaser {
+  id          String            @id @default(uuid()) @db.Uuid
+  branch      String            @default("iq")
+  category    ContentCategory   @default(general)
+  contentJson Json              @default("{}") @map("content_json")
+  createdAt   DateTime          @default(now()) @map("created_at") @db.Timestamptz(6)
+  description String?
+  difficulty  Int               @default(1)
+  format      BrainTeaserFormat
+  solution    String?
+  title       String
+  xpReward    Int               @default(0) @map("xp_reward")
+
+  @@map("brain_teasers")
+}
+
+model CancelOtp {
+  id         String    @id @default(uuid()) @db.Uuid
+  attempts   Int       @default(0)
+  createdAt  DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  email      String
+  expiresAt  DateTime  @map("expires_at") @db.Timestamptz(6)
+  otpCode    String    @map("otp_code")
+  verified   Boolean   @default(false)
+  verifiedAt DateTime? @map("verified_at") @db.Timestamptz(6)
+
+  @@index([email])
+  @@map("cancel_otps")
+}
+
+model CancellationFeedback {
+  id             String   @id @default(uuid()) @db.Uuid
+  comment        String?
+  createdAt      DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  email          String
+  reason         String
+  source         String   @default("help")
+  subscriptionId String?  @map("subscription_id")
+  userId         String   @map("user_id")
+
+  @@map("cancellation_feedback")
+}
+
+model CoachConversation {
+  id           String   @id @default(uuid()) @db.Uuid
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  messagesJson Json     @default("[]") @map("messages_json")
+  title        String?
+  updatedAt    DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+  userId       String   @map("user_id")
+
+  @@index([userId])
+  @@map("coach_conversations")
+}
+
+model SupportChatConversation {
+  id           String   @id @db.Uuid
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  messagesJson Json     @default("[]") @map("messages_json")
+  pagePath     String?  @map("page_path")
+  updatedAt    DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+  userId       String?  @map("user_id")
+
+  @@index([userId])
+  @@map("support_chat_conversations")
+}
+
+model GeneratedReport {
+  id         String   @id @default(uuid()) @db.Uuid
+  createdAt  DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  reportJson Json     @map("report_json")
+  reportType String   @map("report_type")
+  sessionId  String?  @map("session_id")
+  userId     String   @map("user_id")
+
+  @@index([userId, reportType])
+  @@map("generated_reports")
+}
+
+model LearningPath {
+  id                String   @id @default(uuid()) @db.Uuid
+  createdAt         DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  finalScore        Int?     @map("final_score")
+  planJson          Json     @map("plan_json")
+  scoresSnapshot    Json     @map("scores_snapshot")
+  strongestCategory String?  @map("strongest_category")
+  userId            String   @map("user_id")
+  weakestCategory   String?  @map("weakest_category")
+
+  @@index([userId])
+  @@map("learning_paths")
+}
+
+model Lesson {
+  id          String          @id @default(uuid()) @db.Uuid
+  branch      String          @default("iq")
+  category    ContentCategory @default(general)
+  createdAt   DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  description String?
+  difficulty  Int             @default(1)
+  modulesJson Json            @default("[]") @map("modules_json")
+  orderIndex  Int             @default(0) @map("order_index")
+  quizJson    Json            @default("[]") @map("quiz_json")
+  title       String
+  xpReward    Int             @default(0) @map("xp_reward")
+
+  @@map("lessons")
+}
+
+model LikertTestResult {
+  id           String   @id @default(uuid()) @db.Uuid
+  answersJson  Json     @map("answers_json")
+  completedAt  DateTime @default(now()) @map("completed_at") @db.Timestamptz(6)
+  maxScore     Int      @map("max_score")
+  percentage   Float
+  resultLabel  String   @map("result_label")
+  testId       String   @map("test_id")
+  totalScore   Int      @map("total_score")
+  userId       String   @map("user_id")
+
+  @@index([userId])
+  @@map("likert_test_results")
+}
+
+model OnboardingFlow {
+  id        String               @id @default(uuid()) @db.Uuid
+  createdAt DateTime             @default(now()) @map("created_at") @db.Timestamptz(6)
+  isActive  Boolean              @default(true) @map("is_active")
+  name      String
+  questions OnboardingQuestion[]
+
+  @@map("onboarding_flows")
+}
+
+model OnboardingQuestion {
+  id              String         @id @default(uuid()) @db.Uuid
+  category        String
+  correctAnswer   Int?           @map("correct_answer")
+  createdAt       DateTime       @default(now()) @map("created_at") @db.Timestamptz(6)
+  difficulty      Int            @default(1)
+  displayMs       Int?           @map("display_ms")
+  flowId          String         @map("flow_id") @db.Uuid
+  hasReinforcement Boolean       @default(false) @map("has_reinforcement")
+  image           String?
+  options         Json           @default("[]")
+  orderIndex      Int            @default(0) @map("order_index")
+  prompt          String
+  questionId      Int            @map("question_id")
+  sequence        Json?
+  sequenceVariant String?        @map("sequence_variant")
+  subskill        String?
+  subtitle        String?
+  targetDelayMs   Json?          @map("target_delay_ms")
+  targetPosition  Int?           @map("target_position")
+  timeLimitMs     Int?           @map("time_limit_ms")
+  type            String
+  flow            OnboardingFlow @relation(fields: [flowId], references: [id], onDelete: Cascade)
+
+  @@index([flowId, questionId])
+  @@map("onboarding_questions")
+}
+
+model Profile {
+  id                 String    @id @default(uuid()) @db.Uuid
+  avatarUrl          String?   @map("avatar_url")
+  brainScore         Int       @default(0) @map("brain_score")
+  createdAt          DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  currentStreak      Int       @default(0) @map("current_streak")
+  declinedUpsells    Json?     @map("declined_upsells")
+  displayName        String?   @map("display_name")
+  entitledBranch     String?   @map("entitled_branch")
+  firstReportSeenBhAt DateTime? @map("first_report_seen_bh_at") @db.Timestamptz(6)
+  firstReportSeenHgAt DateTime? @map("first_report_seen_hg_at") @db.Timestamptz(6)
+  firstReportSeenIqAt DateTime? @map("first_report_seen_iq_at") @db.Timestamptz(6)
+  hasUsedTrial       Boolean   @default(false) @map("has_used_trial")
+  lastIp             String?   @map("last_ip")
+  lastIpAt           DateTime? @map("last_ip_at") @db.Timestamptz(6)
+  lastIpSource       String?   @map("last_ip_source")
+  lastLoginDate      DateTime? @map("last_login_date") @db.Date
+  level              Int       @default(1)
+  longestStreak      Int       @default(0) @map("longest_streak")
+  subscriptionTier String? @map("subscription_tier")
+  timezone           String?
+  timezoneAt         DateTime? @map("timezone_at") @db.Timestamptz(6)
+  timezoneSource     String?   @map("timezone_source")
+  updatedAt          DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+  userId             String    @unique @map("user_id")
+  xp                 Int       @default(0)
+
+  @@map("profiles")
+}
+
+model Puzzle {
+  id               String          @id @default(uuid()) @db.Uuid
+  branches         String[]        @default([])
+  category         ContentCategory @default(general)
+  contentJson      Json            @default("{}") @map("content_json")
+  createdAt        DateTime        @default(now()) @map("created_at") @db.Timestamptz(6)
+  difficulty       Int             @default(1)
+  format           PuzzleFormat
+  timeLimitSeconds Int?            @map("time_limit_seconds")
+  title            String
+  xpReward         Int             @default(0) @map("xp_reward")
+
+  @@map("puzzles")
+}
+
+model SupportTicket {
+  id              String   @id @default(uuid()) @db.Uuid
+  billingAmount   String?  @map("billing_amount")
+  billingDate     String?  @map("billing_date")
+  createdAt       DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  email           String
+  message         String
+  name            String
+  status          String   @default("open")
+  subject         String
+  zendeskTicketId String?  @map("zendesk_ticket_id")
+
+  @@map("support_tickets")
+}
+
+model TestCompletion {
+  id          String   @id @default(uuid()) @db.Uuid
+  branch      String
+  completedAt DateTime @default(now()) @map("completed_at") @db.Timestamptz(6)
+  createdAt   DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  payload     Json?
+  updatedAt   DateTime @updatedAt @map("updated_at") @db.Timestamptz(6)
+  userId      String   @map("user_id")
+
+  @@unique([userId, branch])
+  @@map("test_completions")
+}
+
+model UserAchievement {
+  id            String      @id @default(uuid()) @db.Uuid
+  achievementId String      @map("achievement_id") @db.Uuid
+  earnedAt      DateTime    @default(now()) @map("earned_at") @db.Timestamptz(6)
+  userId        String      @map("user_id")
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+  @@map("user_achievements")
+}
+
+model UserContentProgress {
+  id           String         @id @default(uuid()) @db.Uuid
+  completedAt  DateTime?      @map("completed_at") @db.Timestamptz(6)
+  contentId    String         @map("content_id") @db.Uuid
+  contentType  ContentType    @map("content_type")
+  createdAt    DateTime       @default(now()) @map("created_at") @db.Timestamptz(6)
+  mode         String?
+  score        Int?
+  status       ProgressStatus @default(not_started)
+  timeSpentMs  Int?           @map("time_spent_ms")
+  userId       String         @map("user_id")
+
+  @@unique([userId, contentType, contentId])
+  @@map("user_content_progress")
+}
+
+model UserProfile {
+  id                String            @id @default(uuid()) @db.Uuid
+  adaptiveAbility   Decimal?          @map("adaptive_ability") @db.Decimal
+  createdAt         DateTime          @default(now()) @map("created_at") @db.Timestamptz(6)
+  email             String
+  externalId        String?           @map("external_id")
+  finalScore        Int?              @map("final_score")
+  percentile        Int?
+  sessionId         String            @map("session_id")
+  strongestCategory String?           @map("strongest_category")
+  session           AssessmentSession @relation(fields: [sessionId], references: [sessionId], onDelete: Cascade)
+
+  @@index([email])
+  @@index([sessionId])
+  @@map("user_profiles")
+}
+
+model UserPurchase {
+  id                  String   @id @default(uuid()) @db.Uuid
+  amountCents         Int      @map("amount_cents")
+  breezePaymentPageId String?  @map("breeze_payment_page_id")
+  clientIp            String?  @map("client_ip")
+  clientIpSource      String?  @map("client_ip_source")
+  ffPaymentId         String?  @map("ff_payment_id")
+  ffSubscriptionId    String?  @map("ff_subscription_id")
+  funnelSessionId     String?  @map("funnel_session_id")
+  productKey          String   @map("product_key")
+  purchasedAt         DateTime @default(now()) @map("purchased_at") @db.Timestamptz(6)
+  status              String   @default("pending")
+  userId              String?  @map("user_id")
+
+  @@index([userId])
+  @@index([funnelSessionId])
+  @@index([breezePaymentPageId])
+  @@index([ffSubscriptionId])
+  @@index([ffPaymentId])
+  @@map("user_purchases")
+}
+
+/** Pending homepage checkout selection applied when Life-Scale webhook fires. */
+model CheckoutIntent {
+  id               String    @id @default(uuid()) @db.Uuid
+  userId           String    @map("user_id")
+  email            String?
+  offerId          String    @map("offer_id")
+  subscriptionTier String    @map("subscription_tier")
+  entitledBranch   String?   @map("entitled_branch")
+  createdAt        DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  consumedAt       DateTime? @map("consumed_at") @db.Timestamptz(6)
+
+  @@index([userId])
+  @@index([email])
+  @@map("checkout_intents")
+}
+
+/** One-time bridge from a successful guest checkout to report access. */
+model CheckoutHandoff {
+  id              String    @id @default(cuid())
+  secretHash      String    @unique @map("secret_hash")
+  email           String
+  offerId         String    @map("offer_id")
+  funnelSessionId String    @map("funnel_session_id")
+  reportPath      String    @default("/iq-report") @map("report_path")
+  status          String    @default("pending")
+  providerTxId    String?   @map("provider_tx_id")
+  cognitoUserId   String?   @map("cognito_user_id")
+  expiresAt       DateTime  @map("expires_at") @db.Timestamptz(6)
+  consumedAt      DateTime? @map("consumed_at") @db.Timestamptz(6)
+  createdAt       DateTime  @default(now()) @map("created_at") @db.Timestamptz(6)
+  updatedAt       DateTime  @updatedAt @map("updated_at") @db.Timestamptz(6)
+
+  @@index([email, offerId, status])
+  @@index([secretHash])
+  @@map("checkout_handoffs")
+}
+
+/** Shared fixed-window counters for public handoff endpoints on Lambda. */
+model HandoffRateLimit {
+  key         String   @id
+  count       Int      @default(1)
+  windowStart DateTime @map("window_start") @db.Timestamptz(6)
+  expiresAt   DateTime @map("expires_at") @db.Timestamptz(6)
+
+  @@index([expiresAt])
+  @@map("handoff_rate_limits")
+}
+
+/** Idempotency log for Life-Scale webhook event_id values. */
+model LifescaleWebhookEvent {
+  id          String   @id
+  event       String
+  /** Raw `data` object from Life-Scale (amount, offer_id, etc.) for audit/debug. */
+  payload     Json?
+  processedAt DateTime @default(now()) @map("processed_at") @db.Timestamptz(6)
+
+  @@map("lifescale_webhook_events")
+}
+
+model UserReport {
+  id                String   @id @default(uuid()) @db.Uuid
+  createdAt         DateTime @default(now()) @map("created_at") @db.Timestamptz(6)
+  email             String
+  finalScore        Int?     @map("final_score")
+  percentile        Int?
+  percentiles       Json?
+  purchasedAt       DateTime @default(now()) @map("purchased_at") @db.Timestamptz(6)
+  scores            Json?
+  sessionId         String   @map("session_id")
+  strongestCategory String?  @map("strongest_category")
+  testType          String   @default("iq") @map("test_type")
+  title             String   @default("IQ Report")
+  userId            String?  @map("user_id")
+
+  @@index([userId])
+  @@index([email])
+  @@map("user_reports")
+}

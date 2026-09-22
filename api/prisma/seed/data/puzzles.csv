@@ -1,0 +1,101 @@
+id,title,format,category,difficulty,content_json,xp_reward,time_limit_seconds,created_at,branches
+22c99457-dd4e-4813-be45-be9d6be47e8d,Odd One Out Advanced 1,odd_one_out,spatial,3,"{""seed"": 3201, ""type"": ""oddOneOut""}",25,90,2026-02-16 11:32:17.524446+00,{iq}
+f36a74ce-18ef-4d43-9539-301502547002,Odd One Out Advanced 2,odd_one_out,spatial,3,"{""seed"": 3202, ""type"": ""oddOneOut""}",25,90,2026-02-16 11:32:17.524446+00,{iq}
+756d5d2a-6277-4089-933a-f5adc1ba9387,Odd One Out Advanced 3,odd_one_out,spatial,3,"{""seed"": 3203, ""type"": ""oddOneOut""}",25,90,2026-02-16 11:32:17.524446+00,{iq}
+f7727f24-6f80-4591-acf8-df91526860c0,Odd One Out Advanced 4,odd_one_out,spatial,3,"{""seed"": 3204, ""type"": ""oddOneOut""}",25,90,2026-02-16 11:32:17.524446+00,{iq}
+a42db4ac-9f19-4520-a945-60bca6a36f62,Odd One Out Expert 1,odd_one_out,spatial,4,"{""seed"": 4201, ""type"": ""oddOneOut""}",30,120,2026-02-16 11:32:17.524446+00,{iq}
+5cd1731d-61bf-4541-b3e2-ed306386bfeb,Odd One Out Expert 2,odd_one_out,spatial,4,"{""seed"": 4202, ""type"": ""oddOneOut""}",30,120,2026-02-16 11:32:17.524446+00,{iq}
+cc1fd92f-1757-4708-9d86-9e246771bf69,Odd One Out Expert 3,odd_one_out,spatial,4,"{""seed"": 4203, ""type"": ""oddOneOut""}",30,120,2026-02-16 11:32:17.524446+00,{iq}
+e3fe0961-291b-48a0-8757-bfaa2f406a71,Odd One Out Expert 4,odd_one_out,spatial,4,"{""seed"": 4204, ""type"": ""oddOneOut""}",30,120,2026-02-16 11:32:17.524446+00,{iq}
+33b1c098-b3fe-47c5-9a39-8da84f48d4ae,Odd One Out Master 1,odd_one_out,spatial,5,"{""seed"": 5201, ""type"": ""oddOneOut""}",40,150,2026-02-16 11:32:17.524446+00,{iq}
+05a89675-f12d-4bc7-8bf1-556877235c2f,Odd One Out Master 2,odd_one_out,spatial,5,"{""seed"": 5202, ""type"": ""oddOneOut""}",40,150,2026-02-16 11:32:17.524446+00,{iq}
+6793466b-e608-49db-8205-da2385d0a852,Odd One Out Master 3,odd_one_out,spatial,5,"{""seed"": 5203, ""type"": ""oddOneOut""}",40,150,2026-02-16 11:32:17.524446+00,{iq}
+8b2a5536-ed12-4068-89ed-4c8b0c7350d7,Odd One Out Master 4,odd_one_out,spatial,5,"{""seed"": 5204, ""type"": ""oddOneOut""}",40,150,2026-02-16 11:32:17.524446+00,{iq}
+8427c13e-b00f-470f-9183-2dca2d7b956c,Rotation Basics 1,spatial_rotation,spatial,1,"{""seed"": 1301, ""type"": ""rotation""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+2314a9ba-5e22-48d6-8f0c-57a7c336167d,Rotation Basics 2,spatial_rotation,spatial,1,"{""seed"": 1302, ""type"": ""rotation""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+7f83a116-fac4-41b3-8cc2-e4a648b427f6,Rotation Basics 3,spatial_rotation,spatial,1,"{""seed"": 1303, ""type"": ""rotation""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+0570ed5c-1841-4cd7-9d23-2609701211e1,Rotation Basics 4,spatial_rotation,spatial,1,"{""seed"": 1304, ""type"": ""rotation""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+fb23804f-e685-4baf-8160-9e1f43953b41,Rotation Intermediate 1,spatial_rotation,spatial,2,"{""seed"": 2301, ""type"": ""rotation""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+b2f9c150-042b-4787-8e0f-6432160d8670,Rotation Intermediate 2,spatial_rotation,spatial,2,"{""seed"": 2302, ""type"": ""rotation""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+701def95-cb5f-48a6-92aa-dee70fa027c4,Rotation Intermediate 3,spatial_rotation,spatial,2,"{""seed"": 2303, ""type"": ""rotation""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+11c27b3e-9f66-4259-abd8-4674f86a4795,Rotation Intermediate 4,spatial_rotation,spatial,2,"{""seed"": 2304, ""type"": ""rotation""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+868667c4-bc13-4a95-9ba8-ac431b7b167d,Rotation Advanced 1,spatial_rotation,spatial,3,"{""seed"": 3301, ""type"": ""rotation""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+872641c4-d7de-4211-bf77-594872c60412,Rotation Advanced 2,spatial_rotation,spatial,3,"{""seed"": 3302, ""type"": ""rotation""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+ad0ae650-1b1f-4f3a-a24f-5ee167ad0038,Rotation Advanced 3,spatial_rotation,spatial,3,"{""seed"": 3303, ""type"": ""rotation""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+8390080f-11b4-49fd-b1d1-e4f5dd258549,Rotation Advanced 4,spatial_rotation,spatial,3,"{""seed"": 3304, ""type"": ""rotation""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+ab2cb1b7-697c-4a9a-91ba-55bfceaeda0a,Rotation Expert 1,spatial_rotation,spatial,4,"{""seed"": 4301, ""type"": ""rotation""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+eabf3415-231b-44a6-bc43-d1cb398cdbb8,Rotation Expert 2,spatial_rotation,spatial,4,"{""seed"": 4302, ""type"": ""rotation""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+b06c4585-1920-48c9-96a3-8390e8f92cca,Rotation Expert 3,spatial_rotation,spatial,4,"{""seed"": 4303, ""type"": ""rotation""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+dae884a5-6081-4a39-ae63-33ef17d3fdf4,Rotation Expert 4,spatial_rotation,spatial,4,"{""seed"": 4304, ""type"": ""rotation""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+1ddefce9-4529-40bf-af7f-091d0d110136,Rotation Master 1,spatial_rotation,spatial,5,"{""seed"": 5301, ""type"": ""rotation""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+98ad57d7-aad5-4731-8fec-c37ac934636f,Rotation Master 2,spatial_rotation,spatial,5,"{""seed"": 5302, ""type"": ""rotation""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+47eafed8-7920-4555-86ff-1a3469d0af4d,Rotation Master 3,spatial_rotation,spatial,5,"{""seed"": 5303, ""type"": ""rotation""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+91c6d0c1-fc6e-448d-9fde-cb07792ffbe3,Rotation Master 4,spatial_rotation,spatial,5,"{""seed"": 5304, ""type"": ""rotation""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+80087989-88d0-4cab-8a21-4b5da10151d4,Path Trace Basics 1,path_trace,spatial,1,"{""seed"": 1401, ""type"": ""pathTrace""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+713d4430-b3df-4904-ac16-091da4a9d0f2,Path Trace Basics 2,path_trace,spatial,1,"{""seed"": 1402, ""type"": ""pathTrace""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+45cb1552-8573-40d2-92ea-b4963c380d6e,Path Trace Basics 3,path_trace,spatial,1,"{""seed"": 1403, ""type"": ""pathTrace""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+25c75d04-0e28-40f0-82ff-acba5659d640,Path Trace Basics 4,path_trace,spatial,1,"{""seed"": 1404, ""type"": ""pathTrace""}",15,60,2026-02-16 11:32:17.524446+00,{iq}
+ec4c2208-3326-4eb5-89c3-6f5598532385,Path Trace Intermediate 1,path_trace,spatial,2,"{""seed"": 2401, ""type"": ""pathTrace""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+be8f3b52-2e34-45f1-a88b-83fd0a61b6fb,Path Trace Intermediate 2,path_trace,spatial,2,"{""seed"": 2402, ""type"": ""pathTrace""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+5d28089a-b963-478e-b919-b301b7f4eccc,Path Trace Intermediate 3,path_trace,spatial,2,"{""seed"": 2403, ""type"": ""pathTrace""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+712faece-c9f8-4b0e-93f9-5758c4874497,Path Trace Intermediate 4,path_trace,spatial,2,"{""seed"": 2404, ""type"": ""pathTrace""}",20,90,2026-02-16 11:32:17.524446+00,{iq}
+7668aadc-fe1a-4a37-9003-862f2806c712,Path Trace Advanced 1,path_trace,spatial,3,"{""seed"": 3401, ""type"": ""pathTrace""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+144fafad-ed78-4b53-ac9f-0fe2d706428a,Path Trace Advanced 2,path_trace,spatial,3,"{""seed"": 3402, ""type"": ""pathTrace""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+51925273-2dd6-4f73-b21a-37897326d643,Path Trace Advanced 3,path_trace,spatial,3,"{""seed"": 3403, ""type"": ""pathTrace""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+3c8d1245-8837-4a54-a1dc-81f154533d18,Path Trace Advanced 4,path_trace,spatial,3,"{""seed"": 3404, ""type"": ""pathTrace""}",25,120,2026-02-16 11:32:17.524446+00,{iq}
+df834e4c-ae6a-4830-a9e4-89a9d43e8695,Path Trace Expert 1,path_trace,spatial,4,"{""seed"": 4401, ""type"": ""pathTrace""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+5aaf7abb-9bb9-4be3-9ece-ce7328381331,Path Trace Expert 2,path_trace,spatial,4,"{""seed"": 4402, ""type"": ""pathTrace""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+e5b10de0-de25-48a9-b530-ccf70b80ad26,Path Trace Expert 3,path_trace,spatial,4,"{""seed"": 4403, ""type"": ""pathTrace""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+809f2769-78f1-4df0-afe5-0d17f9b4dd9e,Path Trace Expert 4,path_trace,spatial,4,"{""seed"": 4404, ""type"": ""pathTrace""}",30,150,2026-02-16 11:32:17.524446+00,{iq}
+cd312b04-6051-4aff-bc78-8b3b047f4326,Path Trace Master 1,path_trace,spatial,5,"{""seed"": 5401, ""type"": ""pathTrace""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+48b40149-2236-426d-abf5-4f6ac220e174,Path Trace Master 2,path_trace,spatial,5,"{""seed"": 5402, ""type"": ""pathTrace""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+784fa45f-2643-4472-b09b-65126b97a86a,Path Trace Master 3,path_trace,spatial,5,"{""seed"": 5403, ""type"": ""pathTrace""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+5e073e31-8c53-4f59-9410-3bea90ae6377,Path Trace Master 4,path_trace,spatial,5,"{""seed"": 5404, ""type"": ""pathTrace""}",40,180,2026-02-16 11:32:17.524446+00,{iq}
+c70c5061-d8d0-4b13-911a-a8bbe52b5d0c,Matrix Basics 1,matrix_pattern,pattern,1,"{""seed"": 1001, ""size"": 3, ""type"": ""matrix""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+0e294a01-cc26-4c3b-97f7-ef50b8070226,Matrix Basics 2,matrix_pattern,pattern,1,"{""seed"": 1002, ""size"": 3, ""type"": ""matrix""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+893a2cc9-07f3-46bf-8914-c152197a2df0,Matrix Basics 3,matrix_pattern,pattern,1,"{""seed"": 1003, ""size"": 3, ""type"": ""matrix""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+a003d0a7-f763-409e-85bb-a2a880f0a1db,Matrix Basics 4,matrix_pattern,pattern,1,"{""seed"": 1004, ""size"": 3, ""type"": ""matrix""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+b0155ef5-d80d-4f8c-8c9e-edba9d33760a,Matrix Intermediate 1,matrix_pattern,pattern,2,"{""seed"": 2001, ""size"": 3, ""type"": ""matrix""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+77476353-7f30-496f-9354-f19839ad5933,Matrix Intermediate 2,matrix_pattern,pattern,2,"{""seed"": 2002, ""size"": 3, ""type"": ""matrix""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+b742f63c-3eb4-4328-9dcc-c0f5eddd2ad4,Matrix Intermediate 3,matrix_pattern,pattern,2,"{""seed"": 2003, ""size"": 3, ""type"": ""matrix""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+3955bc07-f967-4c7e-b4c3-1ff80438ee5e,Matrix Intermediate 4,matrix_pattern,pattern,2,"{""seed"": 2004, ""size"": 3, ""type"": ""matrix""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+6998ae93-6a4a-481e-9710-d45e36c575bd,Matrix Advanced 1,matrix_pattern,pattern,3,"{""seed"": 3001, ""size"": 4, ""type"": ""matrix""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+7a7b6821-f6de-435c-bf1f-42c5174bb9e3,Matrix Advanced 2,matrix_pattern,pattern,3,"{""seed"": 3002, ""size"": 4, ""type"": ""matrix""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+18931955-f20f-4acf-86fc-d3736c1ecb3e,Matrix Advanced 3,matrix_pattern,pattern,3,"{""seed"": 3003, ""size"": 4, ""type"": ""matrix""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+9510cba9-2980-470f-8821-dc88fa9e94d6,Matrix Advanced 4,matrix_pattern,pattern,3,"{""seed"": 3004, ""size"": 4, ""type"": ""matrix""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+f0fdeb96-15f2-4b7e-83a6-225370e54195,Matrix Expert 1,matrix_pattern,pattern,4,"{""seed"": 4001, ""size"": 4, ""type"": ""matrix""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+308d0f10-d4c0-45ab-87f6-51c80581f418,Matrix Expert 2,matrix_pattern,pattern,4,"{""seed"": 4002, ""size"": 4, ""type"": ""matrix""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+32d170c9-5c6e-440c-9246-e7207631020c,Matrix Expert 3,matrix_pattern,pattern,4,"{""seed"": 4003, ""size"": 4, ""type"": ""matrix""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+1c47dc3e-5a86-44cd-a0c4-400c16ef9b49,Matrix Expert 4,matrix_pattern,pattern,4,"{""seed"": 4004, ""size"": 4, ""type"": ""matrix""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+10adea07-635b-486d-99d5-3d11a14d1e9e,Matrix Master 1,matrix_pattern,pattern,5,"{""seed"": 5001, ""size"": 5, ""type"": ""matrix""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+017d9f3a-26b3-417a-a2a6-aff046a2f79e,Matrix Master 2,matrix_pattern,pattern,5,"{""seed"": 5002, ""size"": 5, ""type"": ""matrix""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+a39e40a0-0c95-4c7f-a0fd-bcbc87824c37,Matrix Master 3,matrix_pattern,pattern,5,"{""seed"": 5003, ""size"": 5, ""type"": ""matrix""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+651360ba-20a5-409f-b0d6-a1f3fea8631b,Matrix Master 4,matrix_pattern,pattern,5,"{""seed"": 5004, ""size"": 5, ""type"": ""matrix""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+bd0b8558-1ae3-4dcf-b6cb-adeef157ca20,Sequence Basics 1,sequence_completion,pattern,1,"{""seed"": 1101, ""type"": ""sequence""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+a2d30af5-5323-4458-b524-069cb98924ff,Sequence Basics 2,sequence_completion,pattern,1,"{""seed"": 1102, ""type"": ""sequence""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+0208791b-78a4-42ab-8a55-4c2fb0640a04,Sequence Basics 3,sequence_completion,pattern,1,"{""seed"": 1103, ""type"": ""sequence""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+ebc94377-a4c8-4971-adc9-6069953c539f,Sequence Basics 4,sequence_completion,pattern,1,"{""seed"": 1104, ""type"": ""sequence""}",15,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+aa0ce94e-4997-4380-8115-76eeddf7132d,Sequence Intermediate 1,sequence_completion,pattern,2,"{""seed"": 2101, ""type"": ""sequence""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+662605e9-ea11-4bb2-a6cb-b2763522bbf8,Sequence Intermediate 2,sequence_completion,pattern,2,"{""seed"": 2102, ""type"": ""sequence""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+e6c3f65c-29ab-443a-ac5f-8076c9862191,Sequence Intermediate 3,sequence_completion,pattern,2,"{""seed"": 2103, ""type"": ""sequence""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+9b7a25ba-75cd-4dbb-bc82-5d3ca740a208,Sequence Intermediate 4,sequence_completion,pattern,2,"{""seed"": 2104, ""type"": ""sequence""}",20,90,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+52f37295-cca2-43d9-83f2-87c523e7639c,Sequence Advanced 1,sequence_completion,logic,3,"{""seed"": 3101, ""type"": ""sequence""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+1b208c35-d2fb-4378-9350-443003c0d284,Sequence Advanced 2,sequence_completion,logic,3,"{""seed"": 3102, ""type"": ""sequence""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+7186b04d-7c50-45bf-a913-c209b22dec5f,Sequence Advanced 3,sequence_completion,logic,3,"{""seed"": 3103, ""type"": ""sequence""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+aa8f3365-14e3-4c23-9104-229345ea75a6,Sequence Advanced 4,sequence_completion,logic,3,"{""seed"": 3104, ""type"": ""sequence""}",25,120,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+099bd3f9-ae67-405f-9b6f-1a916f29a1a6,Sequence Expert 1,sequence_completion,logic,4,"{""seed"": 4101, ""type"": ""sequence""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+388f92a1-fec6-417c-af96-279a54c3998f,Sequence Expert 2,sequence_completion,logic,4,"{""seed"": 4102, ""type"": ""sequence""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+c802e967-e520-4cfd-9235-5ed15db2d12a,Sequence Expert 3,sequence_completion,logic,4,"{""seed"": 4103, ""type"": ""sequence""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+34e01ec8-8adf-4175-a202-5e75a6626ec6,Sequence Expert 4,sequence_completion,logic,4,"{""seed"": 4104, ""type"": ""sequence""}",30,150,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+2e9d8a71-75ca-49f9-a80e-2c3a34e56fde,Sequence Master 1,sequence_completion,logic,5,"{""seed"": 5101, ""type"": ""sequence""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+ff0b0b69-4467-425e-a677-db30e766a3e4,Sequence Master 2,sequence_completion,logic,5,"{""seed"": 5102, ""type"": ""sequence""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+19072423-e2cf-4077-acbf-f473bbefa963,Sequence Master 3,sequence_completion,logic,5,"{""seed"": 5103, ""type"": ""sequence""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+719c357b-2433-45f7-9ecd-1c0e8281aef5,Sequence Master 4,sequence_completion,logic,5,"{""seed"": 5104, ""type"": ""sequence""}",40,180,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+08b1db06-ccb4-40e0-803c-d904e34ab79f,Odd One Out Basics 1,odd_one_out,pattern,1,"{""seed"": 1201, ""type"": ""oddOneOut""}",15,45,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+46710938-0146-4a12-9bf6-84940bb08460,Odd One Out Basics 2,odd_one_out,pattern,1,"{""seed"": 1202, ""type"": ""oddOneOut""}",15,45,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+b7586d2d-faa0-4b5a-9c6e-449c409ec2a3,Odd One Out Basics 3,odd_one_out,pattern,1,"{""seed"": 1203, ""type"": ""oddOneOut""}",15,45,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+26e6b762-bd11-41f0-9478-f8958f8232fa,Odd One Out Basics 4,odd_one_out,pattern,1,"{""seed"": 1204, ""type"": ""oddOneOut""}",15,45,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+59fc1810-0350-458d-9c5d-20ed5337a7bb,Odd One Out Intermediate 1,odd_one_out,pattern,2,"{""seed"": 2201, ""type"": ""oddOneOut""}",20,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+4f79ab50-6607-40d3-87fb-4a157a40a5f8,Odd One Out Intermediate 2,odd_one_out,pattern,2,"{""seed"": 2202, ""type"": ""oddOneOut""}",20,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+a2023ede-7081-4d18-a9bc-70f862499962,Odd One Out Intermediate 3,odd_one_out,pattern,2,"{""seed"": 2203, ""type"": ""oddOneOut""}",20,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"
+137e1de3-91da-4a0a-b245-e18f248d6ff6,Odd One Out Intermediate 4,odd_one_out,pattern,2,"{""seed"": 2204, ""type"": ""oddOneOut""}",20,60,2026-02-16 11:32:17.524446+00,"{iq,hidden_genius}"

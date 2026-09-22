@@ -1,0 +1,11 @@
+---
+description: Prisma migrations are user-owned; agents only edit schema and generate client
+alwaysApply: true
+---
+
+# Prisma migrations
+
+- **Never** create migration files under `api/prisma/migrations/` (no hand-written SQL, no `prisma migrate dev` / `migrate deploy`).
+- **Never** run migrations or `prisma db push` against any database.
+- Agents **may** edit `api/prisma/schema.prisma` and run `prisma generate` (client only).
+- The **user** creates and applies all migrations.

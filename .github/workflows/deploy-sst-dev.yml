@@ -1,0 +1,54 @@
+name: Deploy SST dev
+
+on:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-dev:
+    environment: dev
+    runs-on: ubuntu-latest
+
+    env:
+      SST_STAGE: dev
+      CI: true
+      VITE_API_URL: ${{ vars.VITE_API_URL }}
+      VITE_COGNITO_USER_POOL_ID: ${{ secrets.VITE_COGNITO_USER_POOL_ID }}
+      VITE_COGNITO_CLIENT_ID: ${{ secrets.VITE_COGNITO_CLIENT_ID }}
+      VITE_COGNITO_DOMAIN: ${{ secrets.VITE_COGNITO_DOMAIN }}
+      VITE_COGNITO_REGION: ${{ secrets.VITE_COGNITO_REGION }}
+      VITE_PUBLIC_POSTHOG_KEY: ${{ secrets.PUBLIC_POSTHOG_KEY }}
+      VITE_PUBLIC_POSTHOG_HOST: ${{ secrets.PUBLIC_POSTHOG_HOST }}
+      VITE_LIFESCALE_API_BASE_URL: ${{ vars.VITE_LIFESCALE_API_BASE_URL }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure AWS credentials (GitHub OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::133954050840:role/github-oidc-cp-role
+          aws-region: us-east-1
+          role-session-name: github-actions-${{ github.run_id }}
+
+      - name: Print VITE_API_URL
+        run: echo "VITE_API_URL=$VITE_API_URL"
+
+      - name: Deploy SST dev stage
+        run: npx sst deploy --stage dev

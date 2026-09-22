@@ -1,0 +1,27 @@
+{
+  "name": "brainwave-cdk",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "synth": "AWS_PROFILE=estrelar cdk synth -c stage=dev",
+    "deploy:dev": "AWS_PROFILE=estrelar cdk deploy --all -c stage=dev --require-approval never",
+    "deploy:prod": "AWS_PROFILE=estrelar cdk deploy --all -c stage=prod --require-approval never",
+    "destroy:dev": "AWS_PROFILE=estrelar cdk destroy --all -c stage=dev --force",
+    "destroy:prod": "AWS_PROFILE=estrelar cdk destroy --all -c stage=prod --force",
+    "diff": "AWS_PROFILE=estrelar cdk diff -c stage=dev"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.201.0",
+    "constructs": "^10.4.2",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "aws-cdk": "^2.1018.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

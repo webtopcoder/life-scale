@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 112">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 1.27px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="-.7" y="-.46" width="161.4" height="113.2"/>
+  <path class="cls-2" d="M150.93,56.18v.93s-.12,43.85-.12,43.85c-.01,5.3-4.32,9.58-9.62,9.57l-65.22-.18-57.43-.15c-5.3-.01-9.58-4.32-9.57-9.62l.25-89.53c.01-5.3,4.32-9.58,9.62-9.57l57.6.15,23.79.07,41.27.11c5.3.01,9.58,4.32,9.57,9.62l-.12,44.74Z"/>
+  <polyline class="cls-1" points="150.59 56.18 76.42 56.18 76.42 1.63 76.42 1.62"/>
+</svg>

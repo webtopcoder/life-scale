@@ -1,0 +1,57 @@
+name: Deploy Brainwave API (prod)
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - 'api/**'
+      - 'infra/cdk/**'
+      - '.github/workflows/deploy-api-prod.yml'
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy-api-prod:
+    runs-on: ubuntu-latest
+    environment: prod
+    env:
+      STAGE: prod
+      CDK_DEFAULT_ACCOUNT: '133954050840'
+      CDK_DEFAULT_REGION: us-east-1
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            api/package-lock.json
+            infra/cdk/package-lock.json
+
+      - name: Configure AWS credentials (GitHub OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::133954050840:role/github-oidc-cp-role
+          aws-region: us-east-1
+
+      - name: Install API deps
+        working-directory: api
+        run: npm ci
+
+      - name: Package Lambda zip
+        working-directory: api
+        run: npm run package:lambda
+
+      - name: Install CDK deps
+        working-directory: infra/cdk
+        run: npm ci
+
+      - name: Deploy CDK stacks (Lambda zip + HTTP API)
+        working-directory: infra/cdk
+        run: npx cdk deploy --all -c stage=${STAGE} --require-approval never

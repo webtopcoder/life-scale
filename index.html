@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Scale — The IQ of You</title>
+  <meta name="description" content="See your life in scores. Life Scale gives you clear, scored frameworks for your mind, body, and more — with personal dashboards and improvement plans.">
+  <meta name="author" content="Life Scale" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Life Scale" />
+  <meta property="og:url" content="https://life-scale.com/" />
+  <meta property="og:title" content="Life Scale — The IQ of You">
+  <meta property="og:description" content="See your life in scores. Life Scale gives you clear, scored frameworks for your mind, body, and more — with personal dashboards and improvement plans.">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Life Scale — The IQ of You">
+  <meta name="twitter:description" content="See your life in scores. Life Scale gives you clear, scored frameworks for your mind, body, and more — with personal dashboards and improvement plans.">
+
+  <!-- Klaviyo onsite: bootstrap first, then async loader -->
+  <script type="text/javascript">
+    !function () { if (!window.klaviyo) { window._klOnsite = window._klOnsite || []; try { window.klaviyo = new Proxy({}, { get: function (n, i) { return "push" === i ? function () { var n; (n = window._klOnsite).push.apply(n, arguments) } : function () { for (var n = arguments.length, o = new Array(n), w = 0; w < n; w++)o[w] = arguments[w]; var t = "function" == typeof o[o.length - 1] ? o.pop() : void 0, e = new Promise((function (n) { window._klOnsite.push([i].concat(o, [function (i) { t && t(i), n(i) }])) })); return e } } }) } catch (n) { window.klaviyo = window.klaviyo || [], window.klaviyo.push = function () { var n; (n = window._klOnsite).push.apply(n, arguments) } } } }();
+  </script>
+  <script async type="text/javascript"
+    src="https://static.klaviyo.com/onsite/js/UfSAw7/klaviyo.js?company_id=UfSAw7"></script>
+  <!-- Meta Pixel Code -->
+  <script>
+    (function () {
+      function getQueryParam(name) {
+        var params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+
+      function isValidPixelId(value) {
+        return /^\d{8,20}$/.test(value);
+      }
+
+      var path = (window.location.pathname || '').replace(/\/+$/, '') || '/';
+      var META_DISABLED_KEY = 'meta_disabled_session';
+      var TIKTOK_ONLY_PATHS = ['/onboarding-rvr2-tt', '/onboarding-888-tt'];
+      var isTtOnlyPath = TIKTOK_ONLY_PATHS.indexOf(path) !== -1;
+      var metaDisabled = false;
+      try {
+        metaDisabled = sessionStorage.getItem(META_DISABLED_KEY) === '1';
+      } catch (e) { }
+
+      if (isTtOnlyPath) {
+        try {
+          sessionStorage.setItem(META_DISABLED_KEY, '1');
+        } catch (e) { }
+        metaDisabled = true;
+      }
+
+      if (metaDisabled) {
+        window.dynamicFacebookPixelId = null;
+        return;
+      }
+
+      var pixelIdFromUrl = getQueryParam("sub3") || getQueryParam("fb_pixel");
+      var storedPixelId = localStorage.getItem("fb_pixel_id");
+      var pixelId = null;
+
+      if (isValidPixelId(pixelIdFromUrl)) {
+        pixelId = pixelIdFromUrl;
+        localStorage.setItem("fb_pixel_id", pixelIdFromUrl);
+      } else if (isValidPixelId(storedPixelId)) {
+        pixelId = storedPixelId;
+      }
+
+      window.dynamicFacebookPixelId = pixelId;
+      if (!pixelId) return;
+
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+
+      fbq("init", pixelId);
+      fbq("track", "PageView");
+    })();
+  </script>
+  <!-- End Meta Pixel Code -->
+  <!-- TikTok Pixel Code (TikTok-only funnels; ID from ?pixel=) -->
+  <script>
+    (function () {
+      function getQueryParam(name) {
+        var params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+
+      function isValidTikTokPixelId(value) {
+        return typeof value === 'string' && /^[A-Za-z0-9]{10,30}$/.test(value);
+      }
+
+      var SESSION_KEY = 'tiktok_funnel_session';
+      var PIXEL_ID_KEY = 'tiktok_pixel_id';
+      var path = (window.location.pathname || '').replace(/\/+$/, '') || '/';
+      var TIKTOK_ONLY_PATHS = ['/onboarding-rvr2-tt', '/onboarding-888-tt'];
+      var isTikTokPath = TIKTOK_ONLY_PATHS.indexOf(path) !== -1;
+      var hasSessionFlag = false;
+      try {
+        hasSessionFlag = sessionStorage.getItem(SESSION_KEY) === '1';
+      } catch (e) { }
+
+      if (isTikTokPath) {
+        try {
+          sessionStorage.setItem(SESSION_KEY, '1');
+        } catch (e) { }
+        hasSessionFlag = true;
+      }
+
+      if (!isTikTokPath && !hasSessionFlag) return;
+
+      var pixelIdFromUrl = getQueryParam('pixel');
+      var storedPixelId = null;
+      try {
+        storedPixelId = sessionStorage.getItem(PIXEL_ID_KEY);
+      } catch (e) { }
+      var pixelId = null;
+
+      if (isValidTikTokPixelId(pixelIdFromUrl)) {
+        pixelId = pixelIdFromUrl;
+        try {
+          sessionStorage.setItem(PIXEL_ID_KEY, pixelIdFromUrl);
+        } catch (e) { }
+      } else if (isValidTikTokPixelId(storedPixelId)) {
+        pixelId = storedPixelId;
+      }
+
+      window.dynamicTikTokPixelId = pixelId;
+      if (!pixelId) return;
+
+      !function (w, d, t) {
+        w.TiktokAnalyticsObject = t; var ttq = w[t] = w[t] || [];
+        ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"],
+          ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } };
+        for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+          return e
+        },
+          ttq.load = function (e, n) {
+            var r = "https://analytics.tiktok.com/i18n/pixel/events.js", o = n && n.partner;
+            ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = r, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+            n = document.createElement("script");
+            n.type = "text/javascript", n.async = !0, n.src = r + "?sdkid=" + e + "&lib=" + t;
+            e = document.getElementsByTagName("script")[0];
+            e.parentNode.insertBefore(n, e)
+          };
+        ttq.load(pixelId);
+        ttq.page();
+      }(window, document, 'ttq');
+    })();
+  </script>
+  <!-- End TikTok Pixel Code -->
+
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

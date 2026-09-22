@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 112">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 1.09px;
+      }
+
+      .cls-2 {
+        stroke-width: 1.09px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke-width: 1.09px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" y="0" width="160" height="112"/>
+  <rect class="cls-1" x="104.76" y="55.6" width="49.39" height="54.32" transform="translate(258.91 165.53) rotate(-180)"/>
+  <rect class="cls-3" x="110.52" y="61.15" width="37.87" height="43.23" rx="4.96" ry="4.96" transform="translate(258.91 165.53) rotate(-180)"/>
+  <rect class="cls-4" x="55.3" y="1.28" width="49.39" height="53.95" transform="translate(160 56.5) rotate(-180)"/>
+  <rect class="cls-1" x="5.85" y="55.6" width="49.39" height="54.32" transform="translate(61.09 165.53) rotate(-180)"/>
+  <rect class="cls-3" x="11.61" y="61.15" width="37.87" height="43.23" rx="4.96" ry="4.96" transform="translate(61.09 165.53) rotate(-180)"/>
+  <rect class="cls-1" x="5.85" y="1.28" width="49.39" height="54.32" transform="translate(61.09 56.87) rotate(-180)"/>
+  <rect class="cls-3" x="11.61" y="6.82" width="37.87" height="43.23" rx="4.96" ry="4.96" transform="translate(61.09 56.87) rotate(-180)"/>
+  <rect class="cls-3" x="61.07" y="61.15" width="37.87" height="43.23" rx="4.96" ry="4.96" transform="translate(160 165.53) rotate(-180)"/>
+  <polyline class="cls-2" points="55.24 55.61 104.76 55.61 104.76 110.32"/>
+  <line class="cls-1" x1="55.24" y1="109.92" x2="105.73" y2="109.92"/>
+</svg>

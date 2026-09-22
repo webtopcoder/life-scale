@@ -1,0 +1,36 @@
+id,name,description,icon,xp_reward,condition_json,created_at,branch
+c6da2ce5-90ff-4c02-a188-6fd227655cad,First Steps,Complete your first activity,footprints,25,"{""type"": ""complete_count"", ""count"": 1}",2026-02-16 11:32:17.524446+00,iq
+14faf94c-778a-4e81-b5fb-ec00763d0aac,Brain Teaser Novice,Complete 5 brain teasers,lightbulb,50,"{""type"": ""complete_count"", ""count"": 5, ""content_type"": ""brain_teaser""}",2026-02-16 11:32:17.524446+00,iq
+aeeacb19-00e4-4cce-8c21-63f3b124b165,Puzzle Apprentice,Complete 10 puzzles,puzzle,75,"{""type"": ""complete_count"", ""count"": 10, ""content_type"": ""puzzle""}",2026-02-16 11:32:17.524446+00,iq
+84f3f1ed-d54a-463d-83a3-4df199a32ea5,Puzzle Master,Complete 50 puzzles,crown,200,"{""type"": ""complete_count"", ""count"": 50, ""content_type"": ""puzzle""}",2026-02-16 11:32:17.524446+00,iq
+514d55a5-f170-4191-ae9a-9902e08234a5,Quick Thinker,Complete 5 timed puzzles,zap,100,"{""type"": ""timed_count"", ""count"": 5}",2026-02-16 11:32:17.524446+00,iq
+83b7a6bf-57ee-4f2f-92de-588720447bf8,Speed Demon,Complete 20 timed puzzles,flame,200,"{""type"": ""timed_count"", ""count"": 20}",2026-02-16 11:32:17.524446+00,iq
+fcca6caa-cd57-45c2-95f4-d508ab8a69e9,Scholar,Complete 10 lessons,graduation-cap,150,"{""type"": ""complete_count"", ""count"": 10, ""content_type"": ""lesson""}",2026-02-16 11:32:17.524446+00,iq
+4ceaf619-1370-421a-baa3-8b063da938d8,Bookworm,Complete all 25 lessons,book-open,500,"{""type"": ""complete_count"", ""count"": 25, ""content_type"": ""lesson""}",2026-02-16 11:32:17.524446+00,iq
+74ba01c4-0246-4a28-aed5-91f40db47b5f,BrainScore 250+,Reach a BrainScore of 250,brain,100,"{""type"": ""brain_score"", ""score"": 250}",2026-02-16 11:32:17.524446+00,iq
+5dfc2516-3aba-47b0-b389-c6e01fdc7047,BrainScore 500+,Reach a BrainScore of 500,brain,250,"{""type"": ""brain_score"", ""score"": 500}",2026-02-16 11:32:17.524446+00,iq
+6786c4ca-bd49-406d-bd80-6a51ce317d85,Perfect Score,Score 100% on any quiz,star,75,"{""type"": ""perfect_quiz""}",2026-02-16 11:32:17.524446+00,iq
+a1abe55f-2f74-4cd1-b23c-841cc37ec501,Riddle Master,Complete all riddles,message-circle,150,"{""type"": ""complete_format"", ""format"": ""riddle""}",2026-02-16 11:32:17.524446+00,iq
+958eba22-28f6-4ce1-a0b3-9fe9536b99e1,Logic Legend,Complete 20 logic activities,cpu,200,"{""type"": ""complete_category"", ""count"": 20, ""category"": ""logic""}",2026-02-16 11:32:17.524446+00,iq
+8ab4a43f-a248-4544-82e7-5b4fd8dc7107,Well Rounded,Complete activities in all categories,circle,300,"{""type"": ""all_categories""}",2026-02-16 11:32:17.524446+00,iq
+39b02c4e-5a59-4c28-9151-e29bacd9df6c,Dedicated Learner,Complete 50 total activities,target,400,"{""type"": ""complete_count"", ""count"": 50}",2026-02-16 11:32:17.524446+00,iq
+6cb830f4-9ffc-4f77-9044-bb3a0ed66c18,First Alternate Uses,Complete your first divergent-uses drill.,sparkles,25,"{""kind"": ""first_drill"", ""format"": ""alternate_uses""}",2026-07-26 00:40:21.288244+00,hidden_genius
+ba69300c-2652-46f9-87db-dafb5510ebbe,First Remote Associates,Solve your first remote associates puzzle.,sparkles,25,"{""kind"": ""first_drill"", ""format"": ""remote_associates""}",2026-07-26 00:40:21.288244+00,hidden_genius
+06f15e03-3f6b-41b5-aed2-2d0fbd15dac2,First Analogy Chain,Complete your first analogy drill.,sparkles,25,"{""kind"": ""first_drill"", ""format"": ""analogy_chain""}",2026-07-26 00:40:21.288244+00,hidden_genius
+8723b195-9831-4527-b8e8-ca8d808deab0,First Constraint Flip,Complete your first constraint flip.,sparkles,25,"{""kind"": ""first_drill"", ""format"": ""constraint_flip""}",2026-07-26 00:40:21.288244+00,hidden_genius
+3a15fb90-6386-4e58-b0ce-be134c5a4946,First What If,Complete your first what-if drill.,sparkles,25,"{""kind"": ""first_drill"", ""format"": ""what_if""}",2026-07-26 00:40:21.288244+00,hidden_genius
+4f66a9fc-914b-4ae2-919c-d4559c31a8db,Ten Drills In,Complete ten Genius drills.,trophy,100,"{""kind"": ""drill_count"", ""count"": 10, ""branch"": ""hidden_genius""}",2026-07-26 00:40:21.288244+00,hidden_genius
+908d4641-d45c-4064-9971-0426d50d8f86,Archetype Week,Finish a full week of the Archetype Lab.,trophy,150,"{""kind"": ""archetype_week"", ""count"": 1}",2026-07-26 00:40:21.288244+00,hidden_genius
+1ac3dfbb-6a95-4da7-8917-bc830de77a44,First Pattern Puzzle,Solve your first pattern puzzle in the Genius library.,star,30,"{""kind"": ""first_pattern""}",2026-07-26 00:40:21.288244+00,hidden_genius
+af1052ca-0a7b-4cb6-9595-a9209f142b0a,30-Day Genius Streak,Show up 30 days in a row.,trophy,250,"{""days"": 30, ""kind"": ""streak"", ""branch"": ""hidden_genius""}",2026-07-26 00:40:21.288244+00,hidden_genius
+8e5e37a5-3be0-4413-a017-0e6a94441d9a,Polymath,Complete drills across all five formats.,trophy,300,"{""kind"": ""all_formats""}",2026-07-26 00:40:21.288244+00,hidden_genius
+87b8606f-796f-48d9-8062-166caf4770c4,Seven Days In,Check in seven days in a row.,sparkles,50,"{""days"": 7, ""kind"": ""daily_check_streak""}",2026-07-26 00:40:21.288244+00,brain_health
+b1f5c671-a043-4972-a805-88454200b34b,Thirty Days In,Check in thirty days in a row.,trophy,200,"{""days"": 30, ""kind"": ""daily_check_streak""}",2026-07-26 00:40:21.288244+00,brain_health
+2371f5e4-5066-4cd7-a8ef-bf694864a621,First Reaction Drill,Complete your first reaction time drill.,sparkles,20,"{""kind"": ""first_drill"", ""drill_kind"": ""reaction_time""}",2026-07-26 00:40:21.288244+00,brain_health
+cbeb3ff8-5f2f-4a71-b046-cb1dad82edbe,First Digit Span,Complete your first digit span drill.,sparkles,20,"{""kind"": ""first_drill"", ""drill_kind"": ""digit_span""}",2026-07-26 00:40:21.288244+00,brain_health
+56b3fc74-8954-4d85-bc83-8d3a68b48160,First Focus Sprint,Complete your first Stroop drill.,sparkles,20,"{""kind"": ""first_drill"", ""drill_kind"": ""stroop""}",2026-07-26 00:40:21.288244+00,brain_health
+47306306-9956-4d30-b2fa-3928668ec617,First Dual Task,Complete your first dual task drill.,sparkles,20,"{""kind"": ""first_drill"", ""drill_kind"": ""dual_task""}",2026-07-26 00:40:21.288244+00,brain_health
+5d111605-9596-43c2-a519-88b2e9366e02,First PVT,Complete your first sustained attention drill.,sparkles,20,"{""kind"": ""first_drill"", ""drill_kind"": ""pvt""}",2026-07-26 00:40:21.288244+00,brain_health
+55f117b0-dbe5-450d-85a0-fc6b2a3de313,Sleep Goal Week,Hit your sleep goal 5 nights out of 7.,star,100,"{""hits"": 5, ""kind"": ""sleep_week""}",2026-07-26 00:40:21.288244+00,brain_health
+a01d902a-888f-42b3-b7bd-0ce6b9b200c8,Stress Drop,Log mood 4+ for 5 days in a week.,star,100,"{""hits"": 5, ""kind"": ""mood_week"", ""threshold"": 4}",2026-07-26 00:40:21.288244+00,brain_health
+cef1a340-b13e-48fc-97cc-c9f52481d4be,Movement Milestone,Log 150 movement minutes in a week.,trophy,120,"{""kind"": ""movement_week"", ""minutes"": 150}",2026-07-26 00:40:21.288244+00,brain_health

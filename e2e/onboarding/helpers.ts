@@ -1,0 +1,20 @@
+/** Shared flow UUIDs / expected seed counts for onboarding e2e. */
+export const FLOW_IDS = {
+  FIXED_V1: "b0000000-0000-0000-0000-000000000001",
+  SHORT_IQ_V1: "e0000000-0000-0000-0000-000000000001",
+  IQSCALE_V1: "f0000000-0000-0000-0000-000000000001",
+  LIFE_SCALE_888: "f0000000-0000-0000-0000-000000000006",
+  LIFE_SCALE_888_TT: "f0000000-0000-0000-0000-000000000007",
+} as const;
+
+export const EXPECTED_COUNTS = {
+  [FLOW_IDS.FIXED_V1]: 36,
+  [FLOW_IDS.SHORT_IQ_V1]: 20,
+  [FLOW_IDS.IQSCALE_V1]: 36,
+  [FLOW_IDS.LIFE_SCALE_888]: 40,
+  [FLOW_IDS.LIFE_SCALE_888_TT]: 40,
+} as const;
+
+export const API_URL = (
+  process.env.E2E_API_URL || "http://localhost:3001"
+).replace(/\/$/, "");

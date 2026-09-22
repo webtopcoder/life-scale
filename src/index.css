@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Life Scale marketing theme - scoped under .lifescale-root so it
+   never leaks into protected onboarding / short-iq / dashboard.
+   ============================================================ */
+.lifescale-root {
+  --iq-paper: 220 20% 99%;
+  --iq-ink: 220 32% 13%;
+  --iq-ink-soft: 220 22% 28%;
+  --iq-muted: 220 12% 46%;
+  --iq-border: 218 22% 90%;
+  --iq-cobalt: 218 85% 45%;
+  --iq-cobalt-hover: 218 85% 38%;
+  --iq-cobalt-deep: 218 90% 26%;
+  --iq-emerald: 155 62% 40%;
+  --iq-mint: 48 92% 88%;
+  --iq-mint-wash: 48 80% 97%;
+  --iq-surface: 0 0% 100%;
+
+  background: hsl(var(--iq-paper));
+  color: hsl(var(--iq-ink));
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.lifescale-root .iq-serif {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.lifescale-root .iq-mint-wash {
+  background:
+    radial-gradient(1200px 500px at 20% -10%, hsl(var(--iq-mint)) 0%, hsl(var(--iq-mint-wash)) 40%, hsl(var(--iq-paper)) 78%);
+}
+
+.lifescale-root .iq-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: hsl(var(--iq-emerald));
+}
+
+.lifescale-root .iq-card {
+  background: hsl(var(--iq-surface));
+  border: 1px solid hsl(var(--iq-border));
+  border-radius: 12px;
+}
+
+.lifescale-root .iq-btn-primary {
+  background: hsl(var(--iq-cobalt));
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 180ms ease;
+}
+.lifescale-root .iq-btn-primary:hover { background: hsl(var(--iq-cobalt-hover)); }
+
+.lifescale-root .iq-btn-outline {
+  background: hsl(var(--iq-surface));
+  color: hsl(var(--iq-ink));
+  border: 1px solid hsl(var(--iq-border));
+  border-radius: 10px;
+  font-weight: 600;
+  transition: border-color 180ms ease, color 180ms ease;
+}
+.lifescale-root .iq-btn-outline:hover {
+  border-color: hsl(var(--iq-cobalt));
+  color: hsl(var(--iq-cobalt));
+}
+
+/* ============================================================
+   Orb-language material: radial gradients, glow, rim light.
+   Used to thread the orbs' surface story through the page
+   without introducing more orb graphics.
+   ============================================================ */
+
+/* Small icon-tile disc that echoes an orb surface: highlight
+   top-left, deeper edge bottom-right, soft outer halo. */
+.lifescale-root .iq-glow-disc {
+  background:
+    radial-gradient(
+      circle at 30% 28%,
+      hsl(0 0% 100% / 0.9) 0%,
+      hsl(var(--iq-mint-wash)) 42%,
+      hsl(var(--iq-mint)) 100%
+    );
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.7),
+    inset 0 -1px 2px hsl(var(--iq-cobalt) / 0.08),
+    0 6px 14px -8px hsl(var(--iq-cobalt) / 0.35);
+  color: hsl(var(--iq-cobalt));
+}
+.lifescale-root .iq-glow-disc-emerald {
+  background:
+    radial-gradient(
+      circle at 30% 28%,
+      hsl(0 0% 100% / 0.9) 0%,
+      hsl(var(--iq-mint-wash)) 42%,
+      hsl(155 55% 82%) 100%
+    );
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.7),
+    inset 0 -1px 2px hsl(var(--iq-emerald) / 0.14),
+    0 6px 14px -8px hsl(var(--iq-emerald) / 0.4);
+  color: hsl(var(--iq-emerald));
+}
+
+/* Tiny pearl bullet marker: bright highlight top-left,
+   richer edge — replaces flat dot bullets. */
+.lifescale-root .iq-pearl {
+  background:
+    radial-gradient(
+      circle at 30% 30%,
+      hsl(0 0% 100%) 0%,
+      hsl(155 62% 55%) 55%,
+      hsl(155 62% 32%) 100%
+    );
+  box-shadow: 0 0 6px hsl(var(--iq-emerald) / 0.55);
+}
+
+/* CTA outer glow — reads as lit from within, matching orb rim. */
+.lifescale-root .iq-lit {
+  box-shadow:
+    0 10px 22px -10px hsl(var(--iq-cobalt) / 0.55),
+    0 0 0 1px hsl(0 0% 100% / 0.08) inset,
+    0 0 18px hsl(var(--iq-cobalt) / 0.28);
+}
+.lifescale-root .iq-lit-emerald {
+  box-shadow:
+    0 10px 22px -10px hsl(var(--iq-emerald) / 0.55),
+    0 0 0 1px hsl(0 0% 100% / 0.08) inset,
+    0 0 18px hsl(var(--iq-emerald) / 0.28);
+}
+
+/* Hero ambient: three off-canvas radial washes that carry the
+   three-branch color story behind the hero. */
+.lifescale-root .iq-hero-ambient {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.lifescale-root .iq-hero-ambient::before,
+.lifescale-root .iq-hero-ambient::after {
+  content: '';
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.55;
+}
+.lifescale-root .iq-hero-ambient::before {
+  width: 620px; height: 620px;
+  left: -220px; top: -260px;
+  background: radial-gradient(circle, hsl(var(--iq-cobalt) / 0.22), transparent 65%);
+}
+.lifescale-root .iq-hero-ambient::after {
+  width: 560px; height: 560px;
+  right: -180px; bottom: -220px;
+  background: radial-gradient(circle, hsl(155 55% 45% / 0.18), transparent 65%);
+}
+.lifescale-root .iq-hero-ambient > .iq-hero-aura-3 {
+  position: absolute;
+  width: 420px; height: 420px;
+  right: 10%; top: 30%;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.35;
+  background: radial-gradient(circle, hsl(270 65% 60% / 0.18), transparent 65%);
+}
+
+/* Trust band: soft top/bottom fades instead of hard borders. */
+.lifescale-root .iq-band-soft {
+  background: hsl(var(--iq-surface));
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  background-image:
+    linear-gradient(hsl(var(--iq-surface)), hsl(var(--iq-surface))),
+    linear-gradient(to right, transparent, hsl(var(--iq-border)) 20%, hsl(var(--iq-border)) 80%, transparent),
+    linear-gradient(to right, transparent, hsl(var(--iq-border)) 20%, hsl(var(--iq-border)) 80%, transparent);
+  background-origin: padding-box, border-box, border-box;
+  background-clip: padding-box, border-box, border-box;
+}
+
+/* Growth-plan card ambient aura. */
+.lifescale-root .iq-card-aura {
+  position: relative;
+}
+.lifescale-root .iq-card-aura::before {
+  content: '';
+  position: absolute;
+  inset: -30px;
+  z-index: -1;
+  border-radius: 24px;
+  background: radial-gradient(circle at 30% 20%, hsl(var(--iq-cobalt) / 0.14), transparent 60%);
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+/* Progress bar luminous rim. */
+.lifescale-root .iq-progress-glow {
+  box-shadow:
+    0 0 12px hsl(var(--iq-emerald) / 0.45),
+    0 0 24px hsl(var(--iq-cobalt) / 0.25);
+}
+
+/* Display numeral — large tonal figure used in place of icons.
+   Reads as a quiet visual anchor at the top of a feature card. */
+.lifescale-root .iq-numeral {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: hsl(var(--iq-ink) / 0.14);
+  font-variant-numeric: tabular-nums;
+}
+.lifescale-root .iq-numeral-sm {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: hsl(var(--iq-ink) / 0.14);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Short accent hairline that sits under the numeral. */
+.lifescale-root .iq-rule {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(to right, hsl(var(--iq-cobalt) / 0.55), hsl(var(--iq-emerald) / 0.35));
+}
+
+/* Trust-band hairline separators — thin vertical rules between items. */
+.lifescale-root .iq-hairline {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: hsl(var(--iq-border));
+}
+
+/* Plan card: neutral surface with top highlight and ambient shadow.
+   Differentiation between plans is structural, not color-coded. */
+.lifescale-root .iq-plan-card {
+  position: relative;
+  background: hsl(var(--iq-surface));
+  border: 1px solid hsl(var(--iq-border));
+  border-radius: 20px;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.9),
+    0 12px 28px -18px hsl(220 40% 20% / 0.18);
+  transition: box-shadow 200ms ease, transform 200ms ease;
+}
+.lifescale-root .iq-plan-card--featured {
+  border-color: hsl(var(--iq-cobalt) / 0.5);
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.95),
+    0 24px 48px -22px hsl(var(--iq-cobalt) / 0.5),
+    0 0 0 1px hsl(var(--iq-cobalt) / 0.15),
+    0 0 24px hsl(var(--iq-cobalt) / 0.18);
+}
+.lifescale-root .iq-plan-pill {
+  background: hsl(var(--iq-cobalt));
+  color: #fff;
+  box-shadow:
+    inset 0 1px 0 hsl(0 0% 100% / 0.45),
+    0 6px 14px -6px hsl(var(--iq-cobalt) / 0.55),
+    0 0 14px hsl(var(--iq-cobalt) / 0.35);
+}
+
+
+
+
+
+/* Life Scale theme override for shadcn semantic tokens (colors only, no size changes).
+   Scoped: only elements inside .lifescale-theme are re-themed. */
+.lifescale-theme {
+  --background: 220 20% 99%;
+  --foreground: 220 32% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 32% 13%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 32% 13%;
+  --primary: 218 85% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 48 80% 97%;
+  --secondary-foreground: 220 32% 13%;
+  --muted: 218 22% 95%;
+  --muted-foreground: 220 12% 46%;
+  --accent: 48 92% 88%;
+  --accent-foreground: 220 32% 13%;
+  --border: 218 22% 90%;
+  --input: 218 22% 90%;
+  --ring: 218 85% 45%;
+}
+
+
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 10%;
+
+    --primary: 220 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 94%;
+    --secondary-foreground: 220 25% 10%;
+
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 160 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 220 70% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 20% 97%;
+    --sidebar-foreground: 220 25% 10%;
+    --sidebar-primary: 220 70% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 92%;
+    --sidebar-accent-foreground: 220 25% 10%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 220 70% 45%;
+
+    --success: 160 60% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 48 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 210 100% 52%;
+    --info-foreground: 0 0% 100%;
+
+    --cta: 145 65% 42%;
+    --cta-foreground: 0 0% 100%;
+    --cta-muted: 145 50% 48%;
+    --cta-hover: 145 65% 38%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(220 70% 45%), hsl(230 60% 55%));
+    --gradient-warm: linear-gradient(135deg, hsl(30 90% 55%), hsl(350 80% 55%));
+    --gradient-cool: linear-gradient(135deg, hsl(210 65% 50%), hsl(220 70% 45%));
+    --gradient-success: linear-gradient(135deg, hsl(160 60% 45%), hsl(180 60% 45%));
+    --gradient-cta: linear-gradient(135deg, hsl(145 65% 42%), hsl(155 60% 38%));
+
+    --shadow-soft: 0 2px 15px -3px hsl(220 25% 10% / 0.08), 0 4px 6px -4px hsl(220 25% 10% / 0.04);
+    --shadow-card: 0 4px 25px -5px hsl(220 25% 10% / 0.1), 0 8px 10px -6px hsl(220 25% 10% / 0.05);
+    --shadow-elevated: 0 10px 40px -10px hsl(220 70% 45% / 0.15), 0 4px 6px -4px hsl(220 25% 10% / 0.05);
+  }
+
+  .dark {
+    --background: 222 30% 8%;
+    --foreground: 210 40% 95%;
+
+    --card: 222 25% 12%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 222 25% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 220 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 160 60% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 35%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 70% 55%;
+
+    --sidebar-background: 222 25% 12%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 220 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 220 70% 55%;
+
+    --success: 160 60% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 48 92% 55%;
+    --warning-foreground: 0 0% 100%;
+    --info: 210 100% 62%;
+    --info-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    overflow-x: clip;
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-logos {
+  animation: scroll-logos 20s linear infinite;
+}
+
+@keyframes soft-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.88;
+  }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes soft-pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.45); }
+  50% { box-shadow: 0 0 0 10px hsl(var(--primary) / 0); }
+}
+.animate-soft-pulse-ring {
+  animation: soft-pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes scroll-results {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-results {
+  animation: scroll-results 30s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--cta) / 0.3); }
+  50% { box-shadow: 0 0 0 6px hsl(var(--cta) / 0); }
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s ease-in-out infinite;
+}
+
+.touch-no-hover {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .touch-no-hover:hover {
+    background-color: var(--touch-bg) !important;
+  }
+
+  .touch-no-hover:active {
+    transform: none !important;
+  }
+}
+
+.ff-payment-method-card #submitButton {
+  background: hsl(var(--cta)) !important;
+}
+
+.ff-payment-method-card .ff-payment-method-radio {
+  border-color: hsl(var(--primary)) !important;
+}
+
+.ff-payment-method-card .ff-payment-method-radio:after {
+  background-color: hsl(var(--primary)) !important;
+}
+
+.ff-payment-method-google-pay .ff-payment-features {
+  display: none !important;
+}
+
+/* Slight italic alternative - gentler than browser italic */
+.slight-italic {
+  font-style: normal;
+  transform: skewX(-4deg);
+  display: inline-block;
+}
